@@ -1,83 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
 
-</body>
-
-<script>
-// for sequence of numbers and dynamic calling of numbers we sue for loop. 
-
-// Assignment 1
-    //revise swap of 2 numbers and send code
-    //  print the length of a string
-    // make a function to add and substract numbers
-    // write a for loop to print table of 4
-    // write a program to find even number
-    // write a program to find odd number
-    // write a for loop till 15 but break it when i=12
-
-
-//question 1
-// const a = "abc";
-
-// // --> a --> 0
-// // --> b --> 1
-// // --> c --> 2
-
-
-// for (let i = 0; i < 6; i++) {
-//   console.log("------>", a[i]);
-// }
-
-
-//question 2
-// arrays
-
-// const a = [1, 5, 7, 8, 10];
-
-// // --> 1
-// // --> 5
-// // --> 7
-// // --> 8
-
-// for (let i = 0; i < 5; i++) {
-//   console.log("--->",a[i]);
-// }
-
-// //question 3 // // arrays
-
-
-// const a = [1, 5, 7, 8,  77];
-
-// for (let i = 0; i < a.length; i++) {
-//   console.log("--->", a[i]);
-// }
-
-
-//question 4
-const a = [1, 2, 3];
-
-    const b = [4, 5, 6];
-
-    const res = [];
-
-    // merge
-
-    for (let i = 0; i < a.length; i++) {
-      res.push(a[i]);
-    }
-
-    for (let i = 0; i < b.length; i++) {
-      res.push(b[i]);
-    }
-
-    console.log("---->", res);
-
+  <body>
+    <script>
       // let a = true;
       // console.log(!a)
 
@@ -113,13 +43,178 @@ const a = [1, 2, 3];
       //   }
       //   console.log(sum);
 
-    //   for (i = 0; i < 10; i++) {
-    //     if (i % 2 == 0) {
-    //       console.log("this number is even", i);
-    //     }
+      //   for (i = 0; i < 10; i++) {
+      //     if (i % 2 == 0) {
+      //       console.log("this number is even", i);
+      //     }
+      //   }
+
+      // which "in" ---> we define arr[i] in console
+      // let arr = ["abc", "ghgh", 12];
+
+      //     for (let i in arr) {
+      // console.log("-------->", arr[i])
+
+      // }
+
+      ///which "of" we define only "i" in console
+      // let arr =["abc", 45,20];
+
+      // for (let i of arr){
+      //     console.log("--------->", i)
+      // }
+
+      // callbacksss
+
+      // function abc(n, flag, str, fn) {
+
+      // // task completed
+      // console.log(n, flag, str)
+
+      // fn()
+
+      // }
+
+      // function xyz() {
+
+      // console.log("hello im xyz function")
+      // }
+
+      // abc(22, false, "asdsa", xyz)
+
+      ///callback function ek esa function h jo as a argument dia jata h dusre function main.
+      // function myfirst(a,b,c){
+      //     console.log("hello");
+      // }
+
+      // function mySecond(){
+      //     console.log("greetings");
+      // }
+
+      // myfirst("mk", mySecond);
+
+      // let arr = [1,2,3,4,5,6]
+
+      // let arr2 = []
+
+      // for (i=0; i<arr.length; i++){
+
+      // arr2.push(arr[i]);
+
+      // }
+      // console.log(arr2)
+
+      ///save values in array
+      // let arr1 = [1,2,3,4,5,6]
+
+      // let arr2 = []
+
+      //     for (let i in arr1) {
+
+      //    arr2[i]=arr1[i]
+
+      // }
+      // console.log(arr2)
+
+      /// foreach loop
+      // let arr1 = [11,22,33,55,88]
+      // let arr2 = []
+
+      // arr1.forEach(myfunc)
+
+      // function myfunc(item){
+
+      // arr2.push(item)
+      // }
+      // console.log(arr2)
+
+      //index
+      // let arr1 = [1,2,3,4,5,66]
+      // let arr2 = []
+
+      // arr1.forEach(myfunc)
+
+      // function myfunc(item, i){
+      // arr2[i] = arr1[i]
+      // }
+      // console.log(arr2)
+
+      ///map function
+      //   let arr1 = [11, 22, 33, 44, 55];
+      //   let arr2 = [];
+
+      //   arr1.map(abc);
+
+      //   function abc(item) {
+      //     arr2.push(item);
+      //   }
+      //   console.log(arr2)
+
+      ///map function
+      // let arr1 = [11, 22, 33, 44, 55];
+      // let arr2 = [];
+
+      //   arr2 = arr1.map(abc);
+
+      //   function abc(item) {
+      //     return item + 10;
+      //   }
+      //   console.log(arr2)
+
+      ///callbacks
+      //   function abc1(item, fn, fn2,fn3) {
+      //     console.log(item)
+      //     fn();
+      //     fn2();
+      //     fn3();
+
+      //   }
+      //   function abc2() {
+      //     console.log("bye");
+      //   }
+
+      //   function xyz(){
+      //     console.log("xyz")
+      //   }
+      //   function efg(){
+      //     console.log("efg")
+      //   }
+      //   abc1("my callback ", abc2,xyz,efg);
+
+
+      //foreach loop
+    //   let arr1 = [11, 22, 33, 44, 55, 66];
+
+    //   arr1.forEach(function (item) {
+    //     console.log(item);
+    //   });
+
+    //  ///map 
+    //   let arr2 = [22,33,88,99,77];
+
+    //   arr2.map(function (item){
+    //   console.log(item);
     //   }
+    // )
 
-</script>
 
+    //create object for key and their calues.
+// const car = {
+//     name: "honda",
+//     id:22,
+//     color: "silver"
+// }
+// for (let i in car){
+// console.log( i,"-------->",car[i])
 
+// }
+
+// ///to add year in object
+// car.year = 2001;
+// console.log(car)
+
+//code formatting
+// alt+shift+F
+    </script>
+  </body>
 </html>
